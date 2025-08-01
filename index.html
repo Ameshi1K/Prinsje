@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onze Kleine Prins - 11 November 2025</title>
+    <meta property="og:title" content="Onze Kleine Prins - Geboorte 11 November 2025">
+    <meta property="og:description" content="Een liefdevolle website voor onze zoon die binnenkort de wereld zal verlichten">
+    <meta property="og:image" content="https://files.catbox.moe/co7nx1.png">
+    <meta property="og:url" content="https://onzekleineprins.nl">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c7be5;
+            --primary-dark: #165dba;
+            --dark: #12263f;
+            --light: #f8f9fa;
+            --gold: #d4af37;
+            --white: #ffffff;
+            --shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            text-align: center;
+            padding: 0;
+            position: relative;
+            height: 100vh;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .header-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://files.catbox.moe/co7nx1.png') center/cover no-repeat;
+            opacity: 0.15;
+            z-index: 0;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            padding: 40px;
+            background: rgba(255,255,255,0.9);
+            max-width: 900px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            margin: 20px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: var(--dark);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        h2 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            color: var(--primary-dark);
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+        
+        .countdown {
+            margin-top: 40px;
+        }
+        
+        .countdown-title {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        
+        .timer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .timer-box {
+            background: var(--white);
+            padding: 25px 20px;
+            border-radius: 15px;
+            min-width: 120px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .timer-value {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1;
+        }
+        
+        .timer-label {
+            font-size: 1rem;
+            color: var(--dark);
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            margin-bottom: 60px;
+            color: var(--dark);
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 3px;
+            background: var(--gold);
+            margin: 20px auto;
+        }
+        
+        .baby-section {
+            background: url('https://files.catbox.moe/co7nx1.png') center/cover no-repeat;
+            height: 60vh;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .baby-section:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.3);
+        }
+        
+        .baby-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            max-width: 800px;
+            padding: 0 30px;
+        }
+        
+        .story {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 60px;
+            box-shadow: var(--shadow);
+            margin-bottom: 60px;
+            position: relative;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .story p {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+        
+        .highlight {
+            color: var(--primary);
+            font-weight: 700;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+        
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .video-container.portrait {
+            padding-bottom: 177.78%;
+        }
+        
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .parents {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 60px;
+            flex-wrap: wrap;
+        }
+        
+        .parent {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 50px 40px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            width: 350px;
+            position: relative;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .parent img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 30px;
+            border: 3px solid var(--gold);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .parent h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+        
+        .parent p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .message {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 60px;
+            margin-top: 60px;
+            box-shadow: var(--shadow);
+            position: relative;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .message p {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+        
+        .signature {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--primary);
+            text-align: right;
+            margin-top: 40px;
+        }
+        
+        footer {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+        }
+        
+        footer p {
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 992px) {
+            .container {
+                padding: 0 20px;
+            }
+            
+            .header-content {
+                padding: 30px;
+            }
+            
+            .parent {
+                width: 100%;
+                max-width: 350px;
+                padding: 40px 30px;
+            }
+            
+            .story, .message {
+                padding: 40px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                height: auto;
+                min-height: auto;
+                padding: 100px 0;
+            }
+            
+            .header-content {
+                margin: 0;
+                border-radius: 0;
+            }
+            
+            .timer-box {
+                min-width: 100px;
+                padding: 20px 15px;
+            }
+            
+            section {
+                padding: 80px 0;
+            }
+            
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            .parents {
+                gap: 40px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .header-content {
+                padding: 20px;
+            }
+            
+            .timer {
+                gap: 10px;
+            }
+            
+            .timer-box {
+                min-width: 80px;
+                padding: 15px 10px;
+            }
+            
+            .timer-value {
+                font-size: 2rem;
+            }
+            
+            .story, .message {
+                padding: 30px 20px;
+            }
+            
+            .parent {
+                padding: 30px 20px;
+            }
+            
+            .parent img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-image"></div>
+        <div class="header-content">
+            <h1>Onze Kleine Prins</h1>
+            <h2>Komt op 11 November 2025</h2>
+            
+            <div class="countdown">
+                <div class="countdown-title">Nog even tot we hem kunnen verwelkomen</div>
+                <div class="timer">
+                    <div class="timer-box">
+                        <div class="timer-value" id="days">00</div>
+                        <div class="timer-label">Dagen</div>
+                    </div>
+                    <div class="timer-box">
+                        <div class="timer-value" id="hours">00</div>
+                        <div class="timer-label">Uren</div>
+                    </div>
+                    <div class="timer-box">
+                        <div class="timer-value" id="minutes">00</div>
+                        <div class="timer-label">Minuten</div>
+                    </div>
+                    <div class="timer-box">
+                        <div class="timer-value" id="seconds">00</div>
+                        <div class="timer-label">Seconden</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="baby-section">
+        <div class="baby-content">
+            <h2 class="section-title" style="color: white;">Onze Kleine Prins</h2>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Het mooiste geschenk dat we elkaar konden geven</p>
+        </div>
+    </section>
+    
+    <section id="our-story">
+        <div class="container">
+            <h2 class="section-title">Onze Reis</h2>
+            
+            <div class="story">
+                <p>Onze reis begon met onze eerste date bij de bowlingbaan en karting, een dag vol lachen en plezier. Daarna deelden we zoveel mooie momenten - van ons eerste seafood diner dat we samen kookten, tot vakanties waar we elkaar misten als we even apart waren.</p>
+                
+                <p>We bouwden samen een leven op, eerst bij mijn oom, later in ons eigen huis. Onze zoon is het mooiste wat we samen hebben gecreëerd. Hij verdient ouders die, ondanks alles, het beste voor hem willen. Ik heb er altijd in geloofd dat we dat samen konden zijn, en dat geloof heb ik nog steeds.</p>
+                
+                <p>Het was nooit mijn bedoeling om je pijn te doen. Als er momenten waren waarop dat wel gebeurde, dan spijt me dat oprecht. Maar laten we nu vooruit kijken - naar onze zoon, naar zijn toekomst, naar de kans om hem te laten opgroeien met beide ouders die om hem geven.</p>
+            </div>
+            
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://files.catbox.moe/e1f90z.jpg" alt="Eerste date bowling en karting">
+                </div>
+                <div class="gallery-item">
+                    <div class="video-container">
+                        <video controls controlsList="nodownload">
+                            <source src="https://files.catbox.moe/yvui2q.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="video-container portrait">
+                        <video controls controlsList="nodownload">
+                            <source src="https://files.catbox.moe/js6jqd.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://files.catbox.moe/trqf0y.jpg" alt="Bij mijn oom thuis">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://files.catbox.moe/16nt91.jpg" alt="Eerste kerst samen">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://files.catbox.moe/xsrrvh.jpg" alt="Momenten samen">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://files.catbox.moe/f7ucmn.jpg" alt="Samen">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://files.catbox.moe/unjfc5.jpg" alt="Zwangerschap">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://files.catbox.moe/4wgmhk.jpg" alt="Samen">
+                </div>
+                <div class="gallery-item">
+                    <div class="video-container">
+                        <video controls controlsList="nodownload">
+                            <source src="https://files.catbox.moe/g5f6jj.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="video-container portrait">
+                        <video controls controlsList="nodownload">
+                            <source src="https://files.catbox.moe/wjmwnb.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="video-container">
+                        <video controls controlsList="nodownload">
+                            <source src="https://files.catbox.moe/1eukn3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="parents">
+        <div class="container">
+            <h2 class="section-title">Zijn Ouders</h2>
+            
+            <div class="parents">
+                <div class="parent">
+                    <img src="https://files.catbox.moe/f7ucmn.jpg" alt="Marlitsa Leerdam">
+                    <h3>Marlitsa Leerdam</h3>
+                    <p>Geboren: 24-04-2003</p>
+                    <p>Zijn moeder</p>
+                </div>
+                
+                <div class="parent">
+                    <img src="https://files.catbox.moe/4wgmhk.jpg" alt="Romenio Roseval">
+                    <h3>Romenio Roseval</h3>
+                    <p>Geboren: 29-04-2004</p>
+                    <p>Zijn vader</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="message">
+        <div class="container">
+            <h2 class="section-title">Voor Jou</h2>
+            
+            <div class="message">
+                <p>Marlitsa,</p>
+                
+                <p>Je hebt altijd een speciale plek in mijn leven, omdat jij me het grootste geschenk hebt gegeven: het vaderschap. Omdat ik zelf geen band met mijn vader had, weet ik hoe belangrijk het is dat onze zoon beide ouders heeft die van hem houden.</p>
+                
+                <p>Ik vraag je om open en eerlijk te zijn over je gevoelens. Jij weet wat er echt gebeurd is tussen ons, wie er voor je was in je moeilijkste momenten. We waren gelukkiger toen we minder hadden, en ik geloof dat we dat weer kunnen zijn - niet als partners, maar als ouders voor onze zoon.</p>
+                
+                <p>Je hebt me gezegd dat je tijd nodig hebt, en dat respecteer ik. Maar onze zoon verdient om te weten dat zijn vader er voor hem is. Ik wil niets forceren, alleen de kans om er voor hem te zijn, op welke manier jij dat toelaat.</p>
+                
+                <p>We hebben beide fouten gemaakt, maar nu is het tijd om volwassen te zijn en te focussen op wat belangrijk is: onze kleine prins die komt. Hij is wat nu telt.</p>
+                
+                <div class="signature">Romenio</div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>Voor onze kleine prins - met alle liefde die we in ons hebben</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Countdown timer
+        function updateCountdown() {
+            const birthDate = new Date('November 11, 2025 00:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = birthDate - now;
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').innerHTML = days;
+            document.getElementById('hours').innerHTML = hours;
+            document.getElementById('minutes').innerHTML = minutes;
+            document.getElementById('seconds').innerHTML = seconds;
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+        
+        // Prevent video download
+        document.addEventListener('contextmenu', function(e) {
+            if(e.target.nodeName === 'VIDEO') {
+                e.preventDefault();
+            }
+        }, false);
+    </script>
+</body>
+</html>
